@@ -95,6 +95,8 @@ cmake-build-debug/
 # IntelliJ
 /out/
 
+
+
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
@@ -117,6 +119,8 @@ fabric.properties
 modules.xml
 .idea/misc.xml
 *.ipr
+
+file_searcher/.idea
 
 ### Java ###
 # Compiled class file
@@ -146,3 +150,18 @@ hs_err_pid*
 
 # End of https://www.gitignore.io/api/java,scala,eclipse,intellij+iml
 
+### SBT ###
+# Simple Build Tool
+# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
+
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.history
+.cache
+.lib/
+
+# End of https://www.gitignore.io/api/sbt
